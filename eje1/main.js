@@ -1,5 +1,4 @@
 function nombres(x) {
-    
 }
 
 let array = [{'name':'ana'},{'name':'javi'},{'name':'roberto'},{'name':'vanessa'}];
