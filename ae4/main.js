@@ -1,21 +1,8 @@
-let values = [22,24,27,11,14,2,3,66,33,13,90,62,30];
-function findGreaterThan(x){
-    let estado;
-    for (let i = 0; i < values.length; i++) {
-        if (x == values[i]) {
-            estado = true;
-            break;
+let values=[8,9,6];
 
-        }else{
-            estado = false;
-        }
-    }
-    if (estado == true) {
-        alert("Cierto");
-    }
-    else{
-        alert("Falso");
-    }
+function findGreaterThan(values,x){
+    let total=values.every(y => y>x);
+    return total;
+    
 }
-let numero = Number(prompt("Introduce un número: "));
-findGreaterThan(numero);
+console.log(findGreaterThan(values, 7));
