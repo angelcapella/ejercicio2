@@ -1,7 +1,10 @@
-let values=[2,4,6,9,55,21,11];
+const values=[2,1,4,6,8];
 
-function findMinimum(values) {
-    let total=values.reduce((a,b)=>a>b );
-    return total/values.length;
-}
-console.log(findMinimum(values));
+
+values.reduce(function(a, b) {
+
+    return Math.min(a, b);
+  
+});
+
+console.log(values);
